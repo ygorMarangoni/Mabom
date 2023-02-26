@@ -175,8 +175,6 @@ header button {
 }
 
 @media (max-width: 1500px) {
-  .headeline {
-  }
   .headeline-txt {
     padding-left: 50px;
   }
