@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2?family=Inder&family=Ramabhadra&display=swap");
+ul,
+a,
+* {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  background-image: url("imgs/bg-2.png");
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  background: rgba(35, 35, 35, 0.7);
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(2px);
+  width: 100%;
+  height: 80px;
+  border-radius: 0px 0px 8px 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 120px 0px 120px;
+  overflow: hidden;
+}
+.logo-icon {
+  margin-right: 10px;
+  position: relative;
+  top: -2px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li a {
+  margin-left: 70px;
+  font-family: "Inder";
+  font-size: 26px;
+  color: #f4a81b;
+  text-shadow: 0px 0px 4px rgba(244, 168, 27, 0.25);
+}
+nav ul li .menu-item {
+  position: relative;
+}
+nav ul li .menu-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 3px;
+  background-color: #f4a81b;
+  border-radius: 5px;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+nav ul li .menu-item:hover::after {
+  transform: scaleX(1);
+}
+
+.contato {
+  border: 2px solid #f4a81b;
+  padding: 4px 16px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 4px rgba(244, 168, 27, 0.25);
+  transition: 0.2s;
+}
+
+.contato:hover {
+  background-color: #f4a81b;
+  color: rgba(35, 35, 35, 0.7);
+}
+
+header button {
+  display: none;
+}
+
+.menu-mbl {
+  display: none;
+}
+.headeline {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 80px;
+  align-items: center;
+}
+
+.headeline-txt {
+  padding-left: 120px;
+}
+
+.headeline-txt h2 {
+  font-family: "Ramabhadra";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 77.5px;
+  line-height: 92px;
+  color: #f4a81b;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.42);
+}
+
+.headeline-txt p {
+  font-family: "Inder";
+  font-style: normal;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  font-size: 26px;
+  color: #d98d00;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.headeline-txt a {
+  font-family: "Ramabhadra";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26.5px;
+  color: #f4a81b;
+  padding: 3px 20px;
+  border: 2.54598px solid #f4a81b;
+  box-shadow: -2px 4px 7px rgba(45, 44, 42, 0.19);
+  border-radius: 12.7299px;
+  display: inline-block;
+  transition: 0.3s;
+  margin-left: 5px;
+}
+
+.headeline a:hover {
+  background-color: #f4a81b;
+  color: #c6c8c5;
+  transform: scale(1.1);
+}
+
+.headeline-img {
+  margin-left: 200px;
+  margin-right: 120px;
+  position: relative;
+}
+
+.key {
+  position: absolute;
+  left: -100px;
+  top: 30px;
+  z-index: -2;
+  animation: rotation 15s infinite linear;
+  overflow: hidden;
+}
+
+.responsive-key {
+  display: none;
+  width: 300px;
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  transform: translateX(-50%);
+  z-index: -4;
+  opacity: 0.6;
+  animation: growth 2s infinite linear;
+  overflow: hidden;
+}
+
+.img-main {
+  box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+@media (max-width: 1500px) {
+  .headeline {
+  }
+  .headeline-txt {
+    padding-left: 50px;
+  }
+
+  .headeline-txt h2 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .headeline-txt p {
+    font-size: 20px;
+  }
+
+  .headeline-txt a {
+    font-size: 22px;
+  }
+
+  .img-main {
+    width: 400px;
+  }
+  .key {
+    width: 526px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .headeline-img {
+    margin-left: 20px;
+    justify-self: end;
+  }
+}
+
+@media (max-width: 950px) {
+  nav {
+    display: none;
+  }
+
+  .menu-mbl {
+    display: block;
+    text-align: center;
+    width: 80%;
+    height: auto;
+    background: rgba(35, 35, 35, 0.7);
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2);
+    z-index: -2;
+    position: absolute;
+    top: -220px;
+    border-radius: 0px 0px 8px 8px;
+    transition: 0.4s;
+    opacity: 0;
+  }
+
+  .menu-mbl.ativo {
+    top: 0;
+    opacity: 1;
+  }
+
+  .menu-mbl a {
+    font-family: "Inder";
+    font-size: 26px;
+    color: #f4a81b;
+    text-shadow: 0px 0px 4px rgba(244, 168, 27, 0.25);
+  }
+
+  .item-mbl {
+    display: inline-block;
+    margin-top: 40px;
+  }
+  #btn-mobile {
+    display: flex;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  #hamburger {
+    border-top: 2px solid;
+    width: 30px;
+    margin-bottom: 20px;
+    margin-right: -10px;
+    color: #f4a81b;
+    filter: drop-shadow(0px 0px 2px #f4a81ba2);
+    margin-top: 40px;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #btn-mobile.active #hamburger {
+    border-top-color: transparent;
+  }
+  #btn-mobile.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #btn-mobile.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}
+
+@media (max-width: 502px) {
+  .headeline {
+    grid-template-columns: 1fr;
+    padding-left: 0px;
+  }
+  header {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .headeline-img {
+    display: none;
+  }
+  .headeline-txt {
+    padding-left: 20px;
+  }
+  .headeline-txt h2 {
+    font-size: 70px;
+    line-height: 80px;
+  }
+
+  .headeline-txt p {
+    color: #f7f7f7;
+    font-size: 19px;
+    padding-bottom: 30px;
+  }
+
+  .headeline-txt a {
+    font-size: 26px;
+  }
+
+  .responsive-key {
+    display: block;
+  }
+}
+
+@media (max-width: 425px) {
+  .headeline-txt h2 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .headeline-txt p {
+    font-size: 22px;
+  }
+  .headeline-txt a {
+    font-size: 26px;
+  }
+  .responsive-key {
+    left: 50%;
+  }
+}
+
+@media (max-width: 390px) {
+  .headeline-txt h2 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .responsive-key {
+    left: 50%;
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes growth {
+  0% {
+    width: 300px;
+    top: 25%;
+  }
+  50% {
+    width: 350px;
+    top: 24%;
+  }
+
+  100% {
+    width: 300px;
+    top: 25%;
+  }
+}
