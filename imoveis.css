@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Inder&family=Ramabhadra&display=swap");
+
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Inder";
+  background-color: #302e2e;
+}
+.text-title {
+  font-family: "Inder";
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  font-size: 77.5px;
+  margin-top: 40px;
+  color: #f4a81b;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.42);
+}
+.imoveis {
+  border: 2px solid red;
+}
+.imoveis-filtro {
+  display: flex;
+  margin-top: 60px;
+  justify-content: center;
+}
+
+.last-item {
+  margin-right: 50px;
+}
+
+.filtro-item {
+  background-color: transparent;
+  text-align: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #f4a81b;
+  font-size: 26px;
+  margin-left: 50px;
+  font-family: "Inder";
+  border: 2px solid #f4a81b;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.filtro-item.active {
+  background-color: #f4a81b;
+  color: #302e2e;
+}
+.filtro-item:hover {
+  background-color: #f4a81b;
+  color: #302e2e;
+}
+
+main {
+  display: grid;
+  gap: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  justify-content: center;
+  margin-top: 70px;
+  grid-template-columns: repeat(auto-fit, 320px);
+}
+
+main div {
+  max-width: 315px;
+  border: 2px solid #f4a81b;
+  display: grid;
+  padding: 20px 10px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+main div img {
+  border: 2px solid #f4a81b;
+  display: block;
+  width: 80%;
+  justify-self: center;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
+}
+
+main div h3 {
+  color: #f4a81b;
+  margin-top: 5px;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.144);
+}
+main div p {
+  color: rgba(190, 184, 177, 0.87);
+  margin-top: 5px;
+}
+
+main div a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #392301;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background: linear-gradient(180deg, #f4a81b 0%, #cc7d06 100%);
+  border-radius: 5px;
+  animation: pulsar 2.5s infinite linear;
+  filter: drop-shadow(0px 0px 4px #cc76063f);
+}
+
+main div a span {
+  font-size: 22px;
+  padding-right: 10px;
+  margin-top: 2px;
+  font-weight: bold;
+}
+
+.box-item.hide {
+  display: none;
+}
+@media (max-width: 600px) {
+  .imoveis-filtro {
+    justify-content: start;
+    overflow-y: scroll;
+  }
+}
+
+@keyframes pulsar {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

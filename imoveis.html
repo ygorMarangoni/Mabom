@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mabom - Imóveis</title>
+  <link rel="stylesheet" href="imoveis.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="imgs/mabom-favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.1.96/css/materialdesignicons.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header class="animate__animated animate__fadeInDown">
+    <div class="logo">
+      <a href="index.html">
+        <img class="logo-icon" src="imgs/logo-icon.svg" alt="">
+        <img src="imgs/logo-txt.png" alt="">
+      </a>
+    </div>
+
+    <button id="btn-mobile">
+      <span id="hamburger"></span>
+    </button>
+
+    <nav id="nav">
+      <ul id="menu" role="menu" class="menu">
+        <li><a class="menu-item" href="index.html">Home</a></li>
+        <li><a class="menu-item" href="imoveis.html">Imóveis</a></li>
+        <li><a class="contato" href="">Contato</a></li>
+      </ul>
+    </nav>
+
+  </header>
+  <div style="display: flex;
+ justify-content: center; position: absolute; overflow: hidden; height: 220px; width: 100%; z-index: 10;">
+    <div class="menu-mbl">
+      <ul>
+        <li><a style="margin-top: 20px;" class="item-mbl" href="index.html">Home</a></li>
+        <li><a class="item-mbl" href=imoveis.html">Imóveis</a></li>
+        <li><a style="margin-bottom: 20px;" class="item-mbl" href="">Contato</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <h2 class="imoveis-filtro animate__animated animate__bounceIn  text-title">Principais Imóveis</h1>
+
+    <ul class="imoveis-filtro animate__animated animate__bounceIn ">
+      <li class="filtro-item active" data-filter="all"> Todos</li>
+      <li class="filtro-item " data-filter="apartamentos"> Apartamentos </li>
+      <li class="filtro-item last-item" data-filter="casas"> Casas </li>
+    </ul>
+
+    <main>
+      <div data-aos="fade-right" class="box-item" data-item="casas">
+        <img src="imgs/house.png" alt="">
+        <h3>Casa no Havaí <span class="mdi mdi-home"></span></h3>
+        <p>
+          <span style="font-size: 19px;"> Descrisção: </span> 2 Quartos <span class="mdi mdi-bed-empty"></span> 2 Banheiros <span class="mdi mdi-toilet"></span> uma Cozinha <span class="mdi mdi-stove"></span> 3 Vagas de Garagem <span class="mdi mdi-car-back"></span> e uma Suite <span class="mdi mdi-bed-queen"></span>.
+        </p>
+        <a href="">
+          <span class="mdi mdi-whatsapp"></span>Marcar Visita</a>
+      </div>
+      <div data-aos="fade-right" class="box-item" data-item="apartamentos">
+        <img src="imgs/house.png" alt="">
+        <h3>Apartamento no Havaí<span style="margin-left: 5px;" class="mdi mdi-office-building"></span> </h3>
+        <p>
+          <span style="font-size: 19px;"> Descrisção: </span> 2 Quartos <span class="mdi mdi-bed-empty"></span> 2 Banheiros <span class="mdi mdi-toilet"></span> uma Cozinha <span class="mdi mdi-stove"></span> 3 Vagas de Garagem <span class="mdi mdi-car-back"></span> e uma Suite <span class="mdi mdi-bed-queen"></span>.
+        </p>
+        <a href="">
+          <span class="mdi mdi-whatsapp"></span>Marcar Visita</a>
+      </div>
+      <div data-aos="fade-right" class="box-item " data-item="casas">
+        <img src="imgs/house.png" alt="">
+        <h3>Casa no Havaí <span class="mdi mdi-home"></span></h3>
+        <p>
+          <span style="font-size: 19px;"> Descrisção: </span> 2 Quartos <span class="mdi mdi-bed-empty"></span> 2 Banheiros <span class="mdi mdi-toilet"></span> uma Cozinha <span class="mdi mdi-stove"></span> 3 Vagas de Garagem <span class="mdi mdi-car-back"></span> e uma Suite <span class="mdi mdi-bed-queen"></span>.
+        </p>
+        <a href="">
+          <span class="mdi mdi-whatsapp"></span>Marcar Visita</a>
+      </div>
+
+      <div data-aos="fade-right" class="box-item" data-item="apartamentos">
+        <img src=" imgs/house.png" alt="">
+        <h3>Apartamento no Havaí<span style="margin-left: 5px;" class="mdi mdi-office-building"></span> </h3>
+        <p>
+          <span style="font-size: 19px;"> Descrisção: </span> 2 Quartos <span class="mdi mdi-bed-empty"></span> 2 Banheiros <span class="mdi mdi-toilet"></span> uma Cozinha <span class="mdi mdi-stove"></span> 3 Vagas de Garagem <span class="mdi mdi-car-back"></span> e uma Suite <span class="mdi mdi-bed-queen"></span>.
+        </p>
+        <a href="">
+          <span class="mdi mdi-whatsapp"></span>Marcar Visita</a>
+      </div>
+      <div data-aos="fade-right" class="box-item" data-item="casas">
+        <img src="imgs/house.png" alt="">
+        <h3>Casa no Havaí <span class="mdi mdi-home"></span></h3>
+        <p>
+          <span style="font-size: 19px;"> Descrisção: </span> 2 Quartos <span class="mdi mdi-bed-empty"></span> 2 Banheiros <span class="mdi mdi-toilet"></span> uma Cozinha <span class="mdi mdi-stove"></span> 3 Vagas de Garagem <span class="mdi mdi-car-back"></span> e uma Suite <span class="mdi mdi-bed-queen"></span>.
+        </p>
+        <a href="">
+          <span class="mdi mdi-whatsapp"></span>Marcar Visita</a>
+      </div>
+      <div data-aos="fade-right" class="box-item " data-item="apartamentos">
+        <img src="imgs/house.png" alt="">
+        <h3>Apartamento no Havaí<span style="margin-left: 5px;" class="mdi mdi-office-building"></span> </h3>
+        <p>
+          <span style="font-size: 19px;"> Descrisção: </span> 2 Quartos <span class="mdi mdi-bed-empty"></span> 2 Banheiros <span class="mdi mdi-toilet"></span> uma Cozinha <span class="mdi mdi-stove"></span> 3 Vagas de Garagem <span class="mdi mdi-car-back"></span> e uma Suite <span class="mdi mdi-bed-queen"></span>.
+        </p>
+        <a href="">
+          <span class="mdi mdi-whatsapp"></span>Marcar Visita</a>
+      </div>
+    </main>
+
+    <script>
+      let list = document.querySelectorAll(".filtro-item")
+      let itemBox = document.querySelectorAll(".box-item");
+
+      for (let i = 0; i < list.length; i++) {
+        list[i].addEventListener("click", function () {
+          for (let j = 0; j < list.length; j++) {
+            list[j].classList.remove("active")
+          }
+          this.classList.add("active")
+
+          let dataFilter = this.getAttribute("data-filter");
+
+          for (let k = 0; k < itemBox.length; k++) {
+            itemBox[k].classList.remove("active");
+            itemBox[k].classList.add("hide");
+
+            if (itemBox[k].getAttribute("data-item") == dataFilter || dataFilter == "all") {
+              itemBox[k].classList.remove("hide");
+              itemBox[k].classList.add("active");
+            }
+          }
+        })
+      }
+
+    </script>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+
+</html>
