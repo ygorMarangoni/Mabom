@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inder&family=Ramabhadra&display=swap");
+@import url(css/footer.css);
 ul,
 a,
 * {
@@ -8,12 +9,16 @@ a,
   box-sizing: border-box;
   list-style: none;
 }
+
+body {
+  background-color: #272727;
+}
 body::-webkit-scrollbar {
   width: 8px;
 }
 
 body::-webkit-scrollbar-track {
-  background: rgb(255, 252, 247);
+  background-color: #272727;
 }
 
 body::-webkit-scrollbar-thumb {

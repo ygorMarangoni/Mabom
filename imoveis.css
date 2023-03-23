@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inder&family=Ramabhadra&display=swap");
-
+@import url(css/footer.css);
 body {
   margin: 0px;
   padding: 0px;
@@ -12,8 +12,8 @@ body {
   font-style: normal;
   font-weight: bold;
   text-align: center;
-  font-size: 77.5px;
-  margin-top: 40px;
+  font-size: 70px;
+  margin-top: 30px;
   color: #f4a81b;
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.42);
 }
@@ -123,7 +123,7 @@ main div a span {
 @media (max-width: 600px) {
   .imoveis-filtro {
     justify-content: start;
-    overflow-y: scroll;
+    overflow-x: auto;
   }
 }
 
@@ -137,5 +137,15 @@ main div a span {
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@media (max-width: 365px) {
+  main div {
+    max-width: 90%;
+    justify-self: center;
+  }
+  .text-title {
+    font-size: 60px;
   }
 }
